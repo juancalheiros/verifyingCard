@@ -20,3 +20,30 @@ describe("Reverse the digits", function () {// switch test -> conjunto de testes
     });
     
 });
+
+describe("Reverse digits and Double number odd ",function(){
+    it(' "01234" should return [46220]', function () { // caso de teste -> teste unitario
+        const numberCard = "01234" // mock -> elementos necessarios para rodar o test
+        
+        const result = dojo.DoubleNumberOdd(numberCard) // Executa a funcao a ser testada
+
+        assert.deepEqual(result, [4,6,2,2,0]); //valida o comportamento da funcao com o resultado esperado
+    });
+
+    it(' "1" should return [1]', function () { // caso de teste -> teste unitario
+        const numberCard = "1" // mock -> elementos necessarios para rodar o test
+        
+        const result = dojo.DoubleNumberOdd(numberCard) // Executa a funcao a ser testada
+
+        assert.deepEqual(result, [1]); //valida o comportamento da funcao com o resultado esperado
+    });
+
+    // it(' "1 2 3 " should return [1]', function () { // caso de teste -> teste unitario
+    //     const numberCard = "1 2 3 " // mock -> elementos necessarios para rodar o test
+        
+    //     const result = dojo.DoubleNumberOdd(numberCard) // Executa a funcao a ser testada
+
+    //     assert.deepEqual(result, [ ,6, ,4, ,2]); //valida o comportamento da funcao com o resultado esperado
+    // });
+});
+ 
